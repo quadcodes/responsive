@@ -10,18 +10,16 @@ function focusOnUrlField()
 
 function doIt()
 {
-  var form          = $('form'),
-      urlInput      = $('#url'),
-      deviceSelect  = $('#device'),
-      iframes       = $('iframe'),
-      proxyUrlInput = $('#proxy-url');
+  var form         = $('form'),
+      urlInput     = $('#url'),
+      deviceSelect = $('#device'),
+      iframes      = $('iframe'),
+      proxyUrl     = 'http://proxy.oldrichvetesnik.cz/';
 
   form.submit(function(e){
     e.preventDefault();
-    var url      = urlInput.val(),
-        device   = deviceSelect.val(),
-        proxy    = device,
-        proxyUrl = proxyUrlInput.val();
+    var url    = urlInput.val(),
+        device = deviceSelect.val();
 
     if ( !url ) return;
     if ( !url.match(/^https?:\/\//) ) url = 'http://' + url;

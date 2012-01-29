@@ -14,7 +14,8 @@ function doIt()
       urlInput     = $('#url'),
       deviceSelect = $('#device'),
       iframes      = $('iframe'),
-      proxyUrl     = 'http://proxy.oldrichvetesnik.cz/';
+      proxyUrl     = 'http://proxy.oldrichvetesnik.cz/'; // Please use your own proxy if possible.
+      //proxyUrl     = 'http://127.0.0.1:4567/'; // Uncomment this if you use local proxy.
 
   form.submit(function(e){
     e.preventDefault();

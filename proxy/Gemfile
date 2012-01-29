@@ -1,0 +1,5 @@
+source 'https://rubygems.org/'
+
+# gem 'pry'       # Debugging
+gem 'shotgun'   # Devel server: shotgun proxy.rb
+gem 'sinatra'   # Server:       ruby proxy.rb

@@ -17,7 +17,7 @@ form p                          { margin: 0; }
 .switches a.active              { color: white; background: #666; }
 
 /* * * * *  the frame  * * * * */
-.frame                          { width: 480px; margin: 20px auto 0; padding: 10px 15px 40px; border-radius: 30px; background: #ccc; }
+.frame                          { width: 480px; margin: 20px auto 0; padding: 10px 15px 30px; border-radius: 30px; background: #ccc; }
 .frame h2						{ margin: 0 0 10px; text-align: center; color: #666; }
 iframe                          { border: none; background: white; }
 .frame,

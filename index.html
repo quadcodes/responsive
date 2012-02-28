@@ -2,19 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Responsive Design Testing</title>
+    <title>Responsive (480 × 800)</title>
     <link rel="stylesheet" href="css/layout.css">
     <script src="js/jquery-1.7.1.min.js"></script>
     <script src="js/app.js"></script>
   </head>
   <body>
 
-    <div class="pull">
-      <h1>Responsive Design Testing</h1>
+    <header>
 
       <form>
         <p>
-          <input type="text" id="url" placeholder="domain.tld" title="Enter URL you wish to load into iframes, e.g. stackoverflow.com">
+          <input type="text" id="url" placeholder="Enter a URL you want to load" title="Enter URL you wish to load into the iframe, e.g. stackoverflow.com">
           <select id="device">
             <option value="">Default User Agent</option>
             <option value="firefox_windows">Firefox Windows</option>
@@ -23,73 +22,35 @@
             <option value="safari_iphone4">Safari iPhone 4</option>
             <option value="safari_ipad2">Safari iPad 2</option>
           </select>
-          <input type="submit" value="Load iframes">
+          <input type="submit" value="Load iframe">
         </p>
       </form>
+
+      <div class="switches">
+        <ul>
+          <li><a class="resolution" data-width="240" data-height="320" href="#">240 × 320</a></li>
+          <li><a class="resolution" data-width="320" data-height="480" href="#">320 × 480</a></li>
+          <li><a class="resolution active" data-width="480" data-height="800" href="#">480 × 800</a></li>
+          <li><a class="resolution" data-width="768" data-height="1024" href="#">768 × 1024</a></li>
+          <li><a class="resolution" data-width="800" data-height="1280" href="#">800 × 1280</a></li>
+          <li><a class="resolution" data-width="1600" data-height="1200" href="#">1600 × 1200</a></li>
+          <li><a class="resolution" data-width="2048" data-height="1536" href="#">2048 × 1536</a></li>
+          <li><a class="orientation" href="#">Orientation</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <div class="frame">
+      <h2>480 × 800</h2>
+      <iframe sandbox="allow-same-origin allow-forms" width="480" height="800" src="http://colly.com/"></iframe>
     </div>
 
-    <div class="frames">
-
-      <div class="frame">
-        <h2>240 × 320</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="240" height="320"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>320 × 480</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="320" height="480"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>480 × 800</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="480" height="800"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>800 × 480</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="800" height="480"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>768 × 1024</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="768" height="1024"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>1024 × 768</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="1024" height="768"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>800 × 1280</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="800" height="1280"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>1280 × 800</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="1280" height="800"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>1600 × 1200</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="1600" height="1200"></iframe>
-      </div>
-
-      <div class="frame">
-        <h2>2048 × 1536</h2>
-        <iframe sandbox="allow-same-origin allow-forms" width="2048" height="1536"></iframe>
-      </div>
-
-    </div>
-
-    <footer>
-      <p>This is a <a href="https://github.com/ollie/responsive" title="Fork me on GitHub">new repo</a> based on Lennart Schoors’ <a href="https://gist.github.com/1685127" title="Original gist">gist</a>.</p>
-      <p class="fork-me">
-        <a href="https://github.com/ollie/responsive" title="Fork me on GitHub">
-          <img src="https://a248.e.akamai.net/assets.github.com/img/bec6c51521dcc8148146135149fe06a9cc737577/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub">
-        </a>
-      </p>
-    </footer>
+    <p class="fork-me">
+      <a href="https://github.com/ollie/responsive" title="Fork me on GitHub">
+        <img src="https://a248.e.akamai.net/assets.github.com/img/bec6c51521dcc8148146135149fe06a9cc737577/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub">
+      </a>
+    </p>
 
   </body>
 </html>
